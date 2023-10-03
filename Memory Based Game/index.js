@@ -111,10 +111,10 @@ parentDiv.addEventListener("click", (event) => {
 
 // step 1 to add the card
 for (let i = 0; i < shuffledChild.length; i++) {
-  const childDiv = document.createElement("div");
-  childDiv.classList.add("card");
-  childDiv.dataset.name = shuffledChild[i].name;
-  // childDiv.style.backgroundImage = `url(${shuffledChild[i].img})`;
+  const childDIV = document.createElement("div");
+  childDIV.classList.add("card");
+  childDIV.dataset.name = shuffledChild[i].name;
+  // childDIV.style.backgroundImage = `url(${shuffledChild[i].img})`;
 
   const front_div = document.createElement("div");
   front_div.classList.add("front-card");
@@ -124,8 +124,8 @@ for (let i = 0; i < shuffledChild.length; i++) {
 
   back_div.style.backgroundImage = `url(${shuffledChild[i].img})`;
 
-  parentDiv.appendChild(childDiv);
+  parentDiv.appendChild(childDIV);
 
-  childDiv.appendChild(front_div);
-  childDiv.appendChild(back_div);
+  childDIV.appendChild(front_div);
+  childDIV.appendChild(back_div);
 }
